@@ -45,9 +45,3 @@ jobs:
           prNumber: ${{ env.PULL_NO }}
           application_type: Kubernetes Manifest
           filePath: ${{ inputs.fileName == '' && 'charts/hello-world/Chart.yaml' || inputs.fileName }}
-  MeshMapScreenshot:
-    steps:
-      - null
-      - null
-      - null
-      - uses: ${GITHUB_REF/refs/tags//}
